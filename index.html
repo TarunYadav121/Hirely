@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Search Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>HIRELY <i class="fas fa-briefcase"></i></h1>
+    <p>Find Your Dream Job Today</p>
+  </header>
+
+  <section class="filters">
+    <h2><i class="fas fa-search"></i> Search Jobs</h2>
+    <form id="search-form">
+      <input type="text" id="role-input" placeholder="Role (e.g., Developer)">
+      <input type="text" id="location-input" placeholder="Location (e.g., New York)">
+      <select id="job-type-select">
+        <option value="">Select Job Type</option>
+        <option value="Full-Time">Full-Time</option>
+        <option value="Part-Time">Part-Time</option>
+        <option value="Internship">Internship</option>
+        <option value="Contract">Contract</option>
+      </select>
+      <div>
+        <button type="submit"><i class="fas fa-search"></i> Search</button>
+        <button type="button" id="clear-filters"><i class="fas fa-times"></i> Clear</button>
+      </div>
+    </form>
+  </section>
+
+  <div id="no-results" class="message">
+    <i class="fas fa-exclamation-circle"></i> No jobs match your search criteria. Try different filters.
+  </div>
+
+  <section class="job-listings">
+    <h2><i class="fas fa-list"></i> Available Jobs <span id="job-count" class="count-badge">4</span></h2>
+
+    <div class="job-card">
+      <h3>Frontend Developer <span class="job-badge badge-fulltime">Full-Time</span></h3>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> New York</p>
+      <p><i class="fas fa-building"></i> <strong>Company:</strong> TechCorp</p>
+      <p><i class="fas fa-dollar-sign"></i> <strong>Salary:</strong> $80,000 - $100,000</p>
+      <p><i class="fas fa-calendar-alt"></i> <strong>Posted:</strong> 2 days ago</p>
+      <button><i class="fas fa-paper-plane"></i> Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h3>Backend Developer <span class="job-badge badge-parttime">Part-Time</span></h3>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> San Francisco</p>
+      <p><i class="fas fa-building"></i> <strong>Company:</strong> DataSystems</p>
+      <p><i class="fas fa-dollar-sign"></i> <strong>Salary:</strong> $50 - $70 per hour</p>
+      <p><i class="fas fa-calendar-alt"></i> <strong>Posted:</strong> 1 week ago</p>
+      <button><i class="fas fa-paper-plane"></i> Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h3>UI/UX Designer <span class="job-badge badge-contract">Contract</span></h3>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Remote</p>
+      <p><i class="fas fa-building"></i> <strong>Company:</strong> DesignHub</p>
+      <p><i class="fas fa-dollar-sign"></i> <strong>Salary:</strong> $90 per hour</p>
+      <p><i class="fas fa-calendar-alt"></i> <strong>Posted:</strong> 3 days ago</p>
+      <button><i class="fas fa-paper-plane"></i> Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h3>Intern Developer <span class="job-badge badge-internship">Internship</span></h3>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Boston</p>
+      <p><i class="fas fa-building"></i> <strong>Company:</strong> LearnTech</p>
+      <p><i class="fas fa-dollar-sign"></i> <strong>Salary:</strong> $25 per hour</p>
+      <p><i class="fas fa-calendar-alt"></i> <strong>Posted:</strong> Today</p>
+      <button><i class="fas fa-paper-plane"></i> Apply Now</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
